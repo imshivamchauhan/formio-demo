@@ -1,0 +1,8 @@
+<mat-form-field>
+    <mat-select placeholder="Choose your form" (selectionChange)="selectedForm($event.value)">
+        <mat-option *ngFor="let form of forms" [value]="form">
+          {{form.title}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+ <formio *ngIf = "isallowed" [form] = "this.selected" ></formio> 

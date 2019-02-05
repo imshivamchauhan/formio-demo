@@ -1,0 +1,13 @@
+<input type="text" class="form-control form--row" id="title" placeholder="TITLE" required
+    [(ngModel)]="header" name="title" (ngModelChange)="title()">  
+<form-builder [form]="form" (change)="onChange($event)"></form-builder>
+  <div class="well jsonviewer">
+    <pre id="json"><code class="language-json" #json></code></pre>
+  </div>
+<div class="row">
+    <div class="col-sm-12 text-center">
+        <button class="save--btn" mat-raised-button color="accent" [disabled]="disabled" (click)="save()">
+            SAVE
+        </button>
+    </div>
+</div>

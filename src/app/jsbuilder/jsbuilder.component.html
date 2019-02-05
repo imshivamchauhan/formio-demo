@@ -1,0 +1,10 @@
+<input type="text" class="form-control form--row" id="title" placeholder="TITLE" required [(ngModel)]="header" name="title"
+    (ngModelChange)="title()">
+<div id="formio"></div>
+<div class="row">
+    <div class="col-sm-12 text-center">
+        <button class="save--btn" mat-raised-button color="accent" [disabled]="disabled" (click)="onSave()">
+            SAVE
+        </button>
+    </div>
+</div>
